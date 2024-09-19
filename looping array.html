@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const course=["java","python","f.e","b.e"];
+        let size=course.length;
+        let text="<ol>";
+            for(let i=0; i<size; i++){ 
+                text +="<li>"+course[i]+"</li>";
+                }
+                    text +="<ul>";
+                        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

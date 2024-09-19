@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Restaurant Menu</h1>
+        <div class="menu-item">
+            <h2>Pizza</h2>
+            <p>Price: $10.00</p>
+            <label for="pizza-quantity">Quantity:</label>
+            <input type="number" id="pizza-quantity" min="0" value="0">
+        </div>
+        <div class="menu-item">
+            <h2>Burger</h2>
+            <p>Price: $8.00</p>
+            <label for="burger-quantity">Quantity:</label>
+            <input type="number" id="burger-quantity" min="0" value="0">
+        </div>
+        <div class="menu-item">
+            <h2>Pasta</h2>
+            <p>Price: $12.00</p>
+            <label for="pasta-quantity">Quantity:</label>
+            <input type="number" id="pasta-quantity" min="0" value="0">
+        </div>
+        <div class="menu-item">
+            <h2>Salad</h2>
+            <p>Price: $6.00</p>
+            <label for="salad-quantity">Quantity:</label>
+            <input type="number" id="salad-quantity" min="0" value="0">
+        </div>
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <h2 id="total-price">Total Price: $0.00</h2>
+    </div>
+    <script src="restaurant.js"></script>
+</body>
+</html>

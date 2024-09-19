@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <button onclick="myfunction()">clickme</button>
+        <script>
+            const course=["java,python,aws"];
+            document.getElementById(demo).innerHTML=course;
+            function myfunction(){
+                course.push("sap");
+                document.getElementById("demo").innerHTML=course;
+            }
+        </script>
+    </body>
+</html>
